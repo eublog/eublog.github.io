@@ -1,377 +1,316 @@
-<!DOCTYPE html>
-<html>
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Python spyder 总结 | Evit&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="python url helper1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768# -*- coding: utf-8 -*-import cookielib, urllib, urllib2">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Python spyder 总结">
-<meta property="og:url" content="https://blog.evit.pro/2016/02/18/Python spyder 总结/index.html">
-<meta property="og:site_name" content="Evit's blog">
-<meta property="og:description" content="python url helper1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768# -*- coding: utf-8 -*-import cookielib, urllib, urllib2">
-<meta property="og:updated_time" content="2016-03-28T13:32:40.020Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python spyder 总结">
-<meta name="twitter:description" content="python url helper1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768# -*- coding: utf-8 -*-import cookielib, urllib, urllib2">
-  
-    <link rel="alternative" href="/atom.xml" title="Evit&#39;s blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css">
+    <title>Python spyder 总结 | Evit&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="Evit">
+    
+    <meta name="description" content="python url helper1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768# -*- ">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="null" class="js-avatar">
-			
-		</a>
-
-		<hgroup>
-		  <h1 class="header-author"><a href="/">Evit</a></h1>
-		</hgroup>
-
+  <body>
+    <header>
+      <div>
 		
-		<p class="header-subtitle">个人博客</p>
-		
-
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>Menu</li>
-						<li>Tags</li>
-						
-						<li>Links</li>
-						
-						
-						<li>About</li>
-						
-					</ul>
-				</div>
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Evit&#39;s blog" title="Evit&#39;s blog"/></a>
 			</div>
-		
-
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-								<a class="github" target="_blank" href="#" title="github">github</a>
-					        
-								<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
-					        
-								<a class="rss" target="_blank" href="#" title="rss">rss</a>
-					        
-								<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-					        
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/nmap/" style="font-size: 10px;">nmap</a> <a href="/tags/spy/" style="font-size: 10px;">spy</a> <a href="/tags/教程/" style="font-size: 10px;">教程</a>
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
-			        
-			        </div>
-				</section>
-				
-
-				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
-				</section>
-				
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Evit&#39;s blog">Evit&#39;s blog</a></h1>
+				<h2 class="blog-motto">个人博客</h2>
 			</div>
-		</div>
-	</header>				
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:blog.evit.pro">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
 </div>
 
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">Evit</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-			
-				<img lazy-src="null" class="js-avatar">
-			
-			</div>
-			<hgroup>
-			  <h1 class="header-author">Evit</h1>
-			</hgroup>
-			
-			<p class="header-subtitle">个人博客</p>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-						<a class="github" target="_blank" href="#" title="github">github</a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss">rss</a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-			        
-				</div>
-			</nav>
-		</header>				
-	</div>
-</nav>
-
-      <div class="body-wrap"><article id="post-Python spyder 总结" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/02/18/Python spyder 总结/" class="article-date">
-  	<time datetime="2016-02-18T13:51:21.000Z" itemprop="datePublished">2016-02-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-      <input type="hidden" class="isFancy" />
+      <a href="/2016/02/18/Python spyder 总结/" title="Python spyder 总结" itemprop="url">Python spyder 总结</a>
+  </h1>
+  <p class="article-author">By
     
+      <a href="https://blog.evit.pro" title="Evit">Evit</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-02-18T13:51:21.000Z" itemprop="datePublished">2016-02-18</time>
+    更新日期:<time datetime="2016-03-28T13:32:40.020Z" itemprop="dateModified">2016-03-28</time>
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Python spyder 总结
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spy/">spy</a></li></ul>
-	</div>
-
-        
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/网络安全/">网络安全</a>
-	</div>
-
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="python-url-helper"><a href="#python-url-helper" class="headerlink" title="python url helper"></a>python url helper</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> cookielib, urllib, urllib2, socket</span><br><span class="line"><span class="keyword">import</span> zlib,StringIO</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HttpClient</span>:</span></span><br><span class="line">  __cookie = cookielib.CookieJar()</span><br><span class="line">  <span class="comment">#代理设置，需要时添加（后续设置为多代理切换）</span></span><br><span class="line">  <span class="comment">#__proxy_handler = urllib2.ProxyHandler(&#123;"http" : '42.121.6.80:8080'&#125;)</span></span><br><span class="line">  __req = urllib2.build_opener(urllib2.HTTPCookieProcessor(__cookie))<span class="comment">#,__proxy_handler)</span></span><br><span class="line">  __req.addheaders = [</span><br><span class="line">    (<span class="string">'Accept'</span>, <span class="string">'application/javascript, */*;q=0.8'</span>),</span><br><span class="line">    (<span class="string">'User-Agent'</span>, <span class="string">'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)'</span>)</span><br><span class="line">  ]</span><br><span class="line">  urllib2.install_opener(__req)</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">Get</span><span class="params">(self, url, refer=None,retries=<span class="number">3</span>)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">      req = urllib2.Request(url)</span><br><span class="line">      req.add_header(<span class="string">'Accept-encoding'</span>, <span class="string">'gzip'</span>)</span><br><span class="line">      <span class="keyword">if</span> <span class="keyword">not</span> (refer <span class="keyword">is</span> <span class="keyword">None</span>):</span><br><span class="line">        req.add_header(<span class="string">'Referer'</span>, refer)</span><br><span class="line">      response = urllib2.urlopen(req, timeout=<span class="number">120</span>)</span><br><span class="line">      html = response.read()</span><br><span class="line">      gzipped = response.headers.get(<span class="string">'Content-Encoding'</span>)</span><br><span class="line">      <span class="keyword">if</span> gzipped:</span><br><span class="line">          html = zlib.decompress(html, <span class="number">16</span>+zlib.MAX_WBITS)</span><br><span class="line">      <span class="keyword">return</span> html</span><br><span class="line">    <span class="keyword">except</span> Exception,what:</span><br><span class="line">        <span class="keyword">print</span> what</span><br><span class="line">        <span class="keyword">if</span> retries&gt;<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> self.Get(url,refer,retries<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"Get Failed"</span>,url</span><br><span class="line">            <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line">    <span class="comment">#except urllib2.HTTPError, e:</span></span><br><span class="line">    <span class="comment">#  return e.read()</span></span><br><span class="line">    <span class="comment">#except socket.timeout, e:</span></span><br><span class="line">    <span class="comment">#  return ''</span></span><br><span class="line">    <span class="comment">#except socket.error, e:</span></span><br><span class="line">    <span class="comment">#  return ''</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">Post</span><span class="params">(self, url, data, refer=None)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">      req = urllib2.Request(url, urllib.urlencode(data))</span><br><span class="line">      <span class="comment">#req = urllib2.Request(url,data)</span></span><br><span class="line">      <span class="keyword">if</span> <span class="keyword">not</span> (refer <span class="keyword">is</span> <span class="keyword">None</span>):</span><br><span class="line">        req.add_header(<span class="string">'Referer'</span>, refer)</span><br><span class="line">      <span class="keyword">return</span> urllib2.urlopen(req, timeout=<span class="number">120</span>).read()</span><br><span class="line">    <span class="keyword">except</span> urllib2.HTTPError, e:</span><br><span class="line">      <span class="keyword">return</span> e.read()</span><br><span class="line">    <span class="keyword">except</span> socket.timeout, e:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line">    <span class="keyword">except</span> socket.error, e:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">Download</span><span class="params">(self, url, file)</span>:</span></span><br><span class="line">    output = open(file, <span class="string">'wb'</span>)</span><br><span class="line">    output.write(urllib2.urlopen(url).read())</span><br><span class="line">    output.close()</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">getCookie</span><span class="params">(self, key)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> c <span class="keyword">in</span> self.__cookie:</span><br><span class="line">      <span class="keyword">if</span> c.name == key:</span><br><span class="line">        <span class="keyword">return</span> c.value</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">setCookie</span><span class="params">(self, key, val, domain)</span>:</span></span><br><span class="line">    ck = cookielib.Cookie(version=<span class="number">0</span>, name=key, value=val, port=<span class="keyword">None</span>, port_specified=<span class="keyword">False</span>, domain=domain, domain_specified=<span class="keyword">False</span>, domain_initial_dot=<span class="keyword">False</span>, path=<span class="string">'/'</span>, path_specified=<span class="keyword">True</span>, secure=<span class="keyword">False</span>, expires=<span class="keyword">None</span>, discard=<span class="keyword">True</span>, comment=<span class="keyword">None</span>, comment_url=<span class="keyword">None</span>, rest=&#123;<span class="string">'HttpOnly'</span>: <span class="keyword">None</span>&#125;, rfc2109=<span class="keyword">False</span>)</span><br><span class="line">    self.__cookie.set_cookie(ck)</span><br></pre></td></tr></table></figure>
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-url-helper"><span class="toc-number">1.</span> <span class="toc-text">python url helper</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#多线程"><span class="toc-number">1.1.</span> <span class="toc-text">多线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证"><span class="toc-number">1.2.</span> <span class="toc-text">验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取"><span class="toc-number">1.3.</span> <span class="toc-text">获取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js-的处理"><span class="toc-number">1.4.</span> <span class="toc-text">js 的处理</span></a></li></ol></li></ol>
+		</div>
+		
+		<h2 id="python-url-helper"><a href="#python-url-helper" class="headerlink" title="python url helper"></a>python url helper</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> cookielib, urllib, urllib2, socket</span><br><span class="line"><span class="keyword">import</span> zlib,StringIO</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HttpClient</span>:</span></span><br><span class="line">  __cookie = cookielib.CookieJar()</span><br><span class="line">  <span class="comment">#代理设置，需要时添加（后续设置为多代理切换）</span></span><br><span class="line">  <span class="comment">#__proxy_handler = urllib2.ProxyHandler(&#123;"http" : '42.121.6.80:8080'&#125;)</span></span><br><span class="line">  __req = urllib2.build_opener(urllib2.HTTPCookieProcessor(__cookie))<span class="comment">#,__proxy_handler)</span></span><br><span class="line">  __req.addheaders = [</span><br><span class="line">    (<span class="string">'Accept'</span>, <span class="string">'application/javascript, */*;q=0.8'</span>),</span><br><span class="line">    (<span class="string">'User-Agent'</span>, <span class="string">'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)'</span>)</span><br><span class="line">  ]</span><br><span class="line">  urllib2.install_opener(__req)</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">Get</span><span class="params">(self, url, refer=None,retries=<span class="number">3</span>)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">      req = urllib2.Request(url)</span><br><span class="line">      req.add_header(<span class="string">'Accept-encoding'</span>, <span class="string">'gzip'</span>)</span><br><span class="line">      <span class="keyword">if</span> <span class="keyword">not</span> (refer <span class="keyword">is</span> <span class="keyword">None</span>):</span><br><span class="line">        req.add_header(<span class="string">'Referer'</span>, refer)</span><br><span class="line">      response = urllib2.urlopen(req, timeout=<span class="number">120</span>)</span><br><span class="line">      html = response.read()</span><br><span class="line">      gzipped = response.headers.get(<span class="string">'Content-Encoding'</span>)</span><br><span class="line">      <span class="keyword">if</span> gzipped:</span><br><span class="line">          html = zlib.decompress(html, <span class="number">16</span>+zlib.MAX_WBITS)</span><br><span class="line">      <span class="keyword">return</span> html</span><br><span class="line">    <span class="keyword">except</span> Exception,what:</span><br><span class="line">        <span class="keyword">print</span> what</span><br><span class="line">        <span class="keyword">if</span> retries&gt;<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> self.Get(url,refer,retries<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"Get Failed"</span>,url</span><br><span class="line">            <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line">    <span class="comment">#except urllib2.HTTPError, e:</span></span><br><span class="line">    <span class="comment">#  return e.read()</span></span><br><span class="line">    <span class="comment">#except socket.timeout, e:</span></span><br><span class="line">    <span class="comment">#  return ''</span></span><br><span class="line">    <span class="comment">#except socket.error, e:</span></span><br><span class="line">    <span class="comment">#  return ''</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">Post</span><span class="params">(self, url, data, refer=None)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">      req = urllib2.Request(url, urllib.urlencode(data))</span><br><span class="line">      <span class="comment">#req = urllib2.Request(url,data)</span></span><br><span class="line">      <span class="keyword">if</span> <span class="keyword">not</span> (refer <span class="keyword">is</span> <span class="keyword">None</span>):</span><br><span class="line">        req.add_header(<span class="string">'Referer'</span>, refer)</span><br><span class="line">      <span class="keyword">return</span> urllib2.urlopen(req, timeout=<span class="number">120</span>).read()</span><br><span class="line">    <span class="keyword">except</span> urllib2.HTTPError, e:</span><br><span class="line">      <span class="keyword">return</span> e.read()</span><br><span class="line">    <span class="keyword">except</span> socket.timeout, e:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line">    <span class="keyword">except</span> socket.error, e:</span><br><span class="line">      <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">Download</span><span class="params">(self, url, file)</span>:</span></span><br><span class="line">    output = open(file, <span class="string">'wb'</span>)</span><br><span class="line">    output.write(urllib2.urlopen(url).read())</span><br><span class="line">    output.close()</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">getCookie</span><span class="params">(self, key)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> c <span class="keyword">in</span> self.__cookie:</span><br><span class="line">      <span class="keyword">if</span> c.name == key:</span><br><span class="line">        <span class="keyword">return</span> c.value</span><br><span class="line">    <span class="keyword">return</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">setCookie</span><span class="params">(self, key, val, domain)</span>:</span></span><br><span class="line">    ck = cookielib.Cookie(version=<span class="number">0</span>, name=key, value=val, port=<span class="keyword">None</span>, port_specified=<span class="keyword">False</span>, domain=domain, domain_specified=<span class="keyword">False</span>, domain_initial_dot=<span class="keyword">False</span>, path=<span class="string">'/'</span>, path_specified=<span class="keyword">True</span>, secure=<span class="keyword">False</span>, expires=<span class="keyword">None</span>, discard=<span class="keyword">True</span>, comment=<span class="keyword">None</span>, comment_url=<span class="keyword">None</span>, rest=&#123;<span class="string">'HttpOnly'</span>: <span class="keyword">None</span>&#125;, rfc2109=<span class="keyword">False</span>)</span><br><span class="line">    self.__cookie.set_cookie(ck)</span><br></pre></td></tr></table></figure>
 <h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> threading <span class="keyword">import</span> Thread</span><br><span class="line"><span class="keyword">from</span> Queue <span class="keyword">import</span> Queue</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"><span class="comment">#q是任务队列</span></span><br><span class="line"><span class="comment">#NUM是并发线程总数</span></span><br><span class="line"><span class="comment">#JOBS是有多少任务</span></span><br><span class="line">q = Queue()</span><br><span class="line">NUM = <span class="number">2</span></span><br><span class="line">JOBS = <span class="number">10</span></span><br><span class="line"><span class="comment">#具体的处理函数，负责处理单个任务</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_somthing_using</span><span class="params">(arguments)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> arguments</span><br><span class="line"><span class="comment">#这个是工作进程，负责不断从队列取数据并处理</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">working</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        arguments = q.get()</span><br><span class="line">        do_somthing_using(arguments)</span><br><span class="line">        sleep(<span class="number">1</span>)</span><br><span class="line">        q.task_done()</span><br><span class="line"><span class="comment">#fork NUM个线程等待队列</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(NUM):</span><br><span class="line">    t = Thread(target=working)</span><br><span class="line">    t.setDaemon(<span class="keyword">True</span>)</span><br><span class="line">    t.start()</span><br><span class="line"><span class="comment">#把JOBS排入队列</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(JOBS):</span><br><span class="line">    q.put(i)</span><br><span class="line"><span class="comment">#等待所有JOBS完成</span></span><br><span class="line">q.join()</span><br></pre></td></tr></table></figure>
 <h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#encoding=utf8</span></span><br><span class="line"><span class="keyword">import</span> urllib</span><br><span class="line"><span class="keyword">import</span> socket</span><br><span class="line">socket.setdefaulttimeout(<span class="number">3</span>)</span><br><span class="line">f = open(<span class="string">"../src/proxy"</span>)</span><br><span class="line">lines = f.readlines()</span><br><span class="line">proxys = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(lines)):</span><br><span class="line">    ip = lines[i].strip(<span class="string">"\n"</span>).split(<span class="string">"\t"</span>)</span><br><span class="line">    proxy_host = <span class="string">"http://"</span>+ip[<span class="number">0</span>]+<span class="string">":"</span>+ip[<span class="number">1</span>]</span><br><span class="line">    proxy_temp = &#123;<span class="string">"http"</span>:proxy_host&#125;</span><br><span class="line">    proxys.append(proxy_temp)</span><br><span class="line">url = <span class="string">"http://ip.chinaz.com/getip.aspx"</span></span><br><span class="line"><span class="keyword">for</span> proxy <span class="keyword">in</span> proxys:</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        res = urllib.urlopen(url,proxies=proxy).read()</span><br><span class="line">        <span class="keyword">print</span> res</span><br><span class="line">    <span class="keyword">except</span> Exception,e:</span><br><span class="line">        <span class="keyword">print</span> proxy</span><br><span class="line">        <span class="keyword">print</span> e</span><br><span class="line">        <span class="keyword">continue</span></span><br></pre></td></tr></table></figure>
 <h3 id="获取"><a href="#获取" class="headerlink" title="获取"></a>获取</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#encoding=utf8</span></span><br><span class="line"><span class="keyword">import</span> urllib2</span><br><span class="line"><span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">User_Agent = <span class="string">'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'</span></span><br><span class="line">header = &#123;&#125;</span><br><span class="line">header[<span class="string">'User-Agent'</span>] = User_Agent</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.xicidaili.com/nn/1'</span></span><br><span class="line">req = urllib2.Request(url,headers=header)</span><br><span class="line">res = urllib2.urlopen(req).read()</span><br><span class="line"></span><br><span class="line">soup = BeautifulSoup.BeautifulSoup(res)</span><br><span class="line">ips = soup.findAll(<span class="string">'tr'</span>)</span><br><span class="line">f = open(<span class="string">"../src/proxy"</span>,<span class="string">"w"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,len(ips)):</span><br><span class="line">    ip = ips[x]</span><br><span class="line">    tds = ip.findAll(<span class="string">"td"</span>)</span><br><span class="line">    ip_temp = tds[<span class="number">2</span>].contents[<span class="number">0</span>]+<span class="string">"\t"</span>+tds[<span class="number">3</span>].contents[<span class="number">0</span>]+<span class="string">"\n"</span></span><br><span class="line">    <span class="comment"># print tds[2].contents[0]+"\t"+tds[3].contents[0]</span></span><br><span class="line">    f.write(ip_temp)</span><br></pre></td></tr></table></figure>
-<h3 id="js-的处理"><a href="#js-的处理" class="headerlink" title="js 的处理"></a>js 的处理</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># encoding=utf8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line"><span class="comment"># connect mysql,get zkxh and xm</span></span><br><span class="line">conn = MySQLdb.Connect(host=<span class="string">'localhost'</span>, user=<span class="string">'root'</span>, passwd=<span class="string">'root'</span>, db=<span class="string">'cet'</span>, port=<span class="number">3306</span>, charset=<span class="string">'utf8'</span>)</span><br><span class="line">cur = conn.cursor()</span><br><span class="line">curr = conn.cursor()</span><br><span class="line">url = <span class="string">'http://www.chsi.com.cn/cet/query'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">kaishi</span><span class="params">(i)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> i,</span><br><span class="line">    <span class="keyword">print</span> <span class="string">" start"</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cur.execute(<span class="string">"select name from cet.cet where zkzh=(%s)"</span> % i)</span><br><span class="line">        xm = cur.fetchone()[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"Name is "</span> + xm</span><br><span class="line">        driver = webdriver.PhantomJS(executable_path=<span class="string">'D:\phantomjs-2.1.1-windows\phantomjs.exe'</span>)</span><br><span class="line">        driver.get(url)</span><br><span class="line">        driver.find_element_by_id(<span class="string">'zkzh'</span>).send_keys(i)</span><br><span class="line">        driver.find_element_by_id(<span class="string">'xm'</span>).send_keys(xm)</span><br><span class="line">        driver.find_elements_by_tag_name(<span class="string">'form'</span>)[<span class="number">1</span>].submit()</span><br><span class="line">        driver.set_page_load_timeout(<span class="number">10</span>)</span><br><span class="line">        leibie = driver.find_element_by_xpath(<span class="string">"//tr[3]/td[1]"</span>).text</span><br><span class="line">        leibie2 = str(leibie.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">        ss = <span class="string">""</span></span><br><span class="line">        <span class="keyword">if</span> leibie2.decode(<span class="string">"utf-8"</span>) == <span class="string">'英语四级'</span>.decode(<span class="string">"utf-8"</span>):</span><br><span class="line">            ss = <span class="number">4</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            ss = <span class="number">6</span></span><br><span class="line">        <span class="comment"># zongfen = driver.find_element_by_xpath("//tr[6]/th[1]").text</span></span><br><span class="line">        <span class="comment"># print zongfen</span></span><br><span class="line">        <span class="comment"># print "===="</span></span><br><span class="line">        chuli = driver.find_element_by_xpath(<span class="string">"//tr[6]/td[1]"</span>).text</span><br><span class="line">        <span class="keyword">print</span> chuli</span><br><span class="line">        chuli2 = str(chuli.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">        m = re.findall(<span class="string">r'(\w*[0-9]+)\w*'</span>, chuli2)</span><br><span class="line">        sqltxt = <span class="string">"update cet.cet set leibie=(%s),zongfen=(%s),tingli=(%s),yuedu=(%s),xiezuo=(%s) WHERE zkzh=(%s)"</span> % (</span><br><span class="line">            ss, m[<span class="number">0</span>], m[<span class="number">1</span>], m[<span class="number">2</span>], m[<span class="number">3</span>], i)</span><br><span class="line">        cur.execute(sqltxt)</span><br><span class="line">        conn.commit()</span><br><span class="line">        <span class="keyword">print</span> str(i) + <span class="string">" finish"</span></span><br><span class="line">    <span class="keyword">except</span> Exception, e:</span><br><span class="line">        <span class="keyword">print</span> e</span><br><span class="line">        driver.close()</span><br><span class="line">        time.sleep(<span class="number">10</span>)</span><br><span class="line">        kaishi(i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># for j1 in range(1201351511001, 1201351512154):</span></span><br><span class="line"><span class="keyword">for</span> j1 <span class="keyword">in</span> range(<span class="number">1201351511007</span>, <span class="number">1201351512154</span>):</span><br><span class="line">    <span class="keyword">for</span> j2 <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">3</span>):</span><br><span class="line">        <span class="keyword">for</span> j3 <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">10</span>):</span><br><span class="line">            j = str(j1) + str(j2) + str(j3)</span><br><span class="line">            <span class="keyword">if</span> str(j2) + str(j3) == <span class="string">"00"</span>:</span><br><span class="line">                <span class="keyword">print</span> <span class="string">"0.0"</span></span><br><span class="line">            <span class="keyword">elif</span> str(j2) + str(j3) == <span class="string">"29"</span>:</span><br><span class="line">                kaishi(str(j1) + str(j2) + str(j3))</span><br><span class="line">                j4 = str(j1) + <span class="string">"30"</span></span><br><span class="line">                kaishi(j4)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                kaishi(j)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"END!!!"</span></span><br><span class="line">cur.close()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
+<h3 id="js-的处理"><a href="#js-的处理" class="headerlink" title="js 的处理"></a>js 的处理</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># encoding=utf8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line"><span class="comment"># connect mysql,get zkxh and xm</span></span><br><span class="line">conn = MySQLdb.Connect(host=<span class="string">'localhost'</span>, user=<span class="string">'root'</span>, passwd=<span class="string">'root'</span>, db=<span class="string">'cet'</span>, port=<span class="number">3306</span>, charset=<span class="string">'utf8'</span>)</span><br><span class="line">cur = conn.cursor()</span><br><span class="line">curr = conn.cursor()</span><br><span class="line">url = <span class="string">'http://www.chsi.com.cn/cet/query'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">kaishi</span><span class="params">(i)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> i,</span><br><span class="line">    <span class="keyword">print</span> <span class="string">" start"</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cur.execute(<span class="string">"select name from cet.cet where zkzh=(%s)"</span> % i)</span><br><span class="line">        xm = cur.fetchone()[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"Name is "</span> + xm</span><br><span class="line">        driver = webdriver.PhantomJS(executable_path=<span class="string">'D:\phantomjs-2.1.1-windows\phantomjs.exe'</span>)</span><br><span class="line">        driver.get(url)</span><br><span class="line">        driver.find_element_by_id(<span class="string">'zkzh'</span>).send_keys(i)</span><br><span class="line">        driver.find_element_by_id(<span class="string">'xm'</span>).send_keys(xm)</span><br><span class="line">        driver.find_elements_by_tag_name(<span class="string">'form'</span>)[<span class="number">1</span>].submit()</span><br><span class="line">        driver.set_page_load_timeout(<span class="number">10</span>)</span><br><span class="line">        leibie = driver.find_element_by_xpath(<span class="string">"//tr[3]/td[1]"</span>).text</span><br><span class="line">        leibie2 = str(leibie.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">        ss = <span class="string">""</span></span><br><span class="line">        <span class="keyword">if</span> leibie2.decode(<span class="string">"utf-8"</span>) == <span class="string">'英语四级'</span>.decode(<span class="string">"utf-8"</span>):</span><br><span class="line">            ss = <span class="number">4</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            ss = <span class="number">6</span></span><br><span class="line">        <span class="comment"># zongfen = driver.find_element_by_xpath("//tr[6]/th[1]").text</span></span><br><span class="line">        <span class="comment"># print zongfen</span></span><br><span class="line">        <span class="comment"># print "===="</span></span><br><span class="line">        chuli = driver.find_element_by_xpath(<span class="string">"//tr[6]/td[1]"</span>).text</span><br><span class="line">        <span class="keyword">print</span> chuli</span><br><span class="line">        chuli2 = str(chuli.encode(<span class="string">"utf-8"</span>))</span><br><span class="line">        m = re.findall(<span class="string">r'(\w*[0-9]+)\w*'</span>, chuli2)</span><br><span class="line">        sqltxt = <span class="string">"update cet.cet set leibie=(%s),zongfen=(%s),tingli=(%s),yuedu=(%s),xiezuo=(%s) WHERE zkzh=(%s)"</span> % (</span><br><span class="line">            ss, m[<span class="number">0</span>], m[<span class="number">1</span>], m[<span class="number">2</span>], m[<span class="number">3</span>], i)</span><br><span class="line">        cur.execute(sqltxt)</span><br><span class="line">        conn.commit()</span><br><span class="line">        <span class="keyword">print</span> str(i) + <span class="string">" finish"</span></span><br><span class="line">    <span class="keyword">except</span> Exception, e:</span><br><span class="line">        <span class="keyword">print</span> e</span><br><span class="line">        driver.close()</span><br><span class="line">        time.sleep(<span class="number">10</span>)</span><br><span class="line">        kaishi(i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># for j1 in range(1201351511001, 1201351512154):</span></span><br><span class="line"><span class="keyword">for</span> j1 <span class="keyword">in</span> range(<span class="number">1201351511007</span>, <span class="number">1201351512154</span>):</span><br><span class="line">    <span class="keyword">for</span> j2 <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">3</span>):</span><br><span class="line">        <span class="keyword">for</span> j3 <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">10</span>):</span><br><span class="line">            j = str(j1) + str(j2) + str(j3)</span><br><span class="line">            <span class="keyword">if</span> str(j2) + str(j3) == <span class="string">"00"</span>:</span><br><span class="line">                <span class="keyword">print</span> <span class="string">"0.0"</span></span><br><span class="line">            <span class="keyword">elif</span> str(j2) + str(j3) == <span class="string">"29"</span>:</span><br><span class="line">                kaishi(str(j1) + str(j2) + str(j3))</span><br><span class="line">                j4 = str(j1) + <span class="string">"30"</span></span><br><span class="line">                kaishi(j4)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                kaishi(j)</span><br><span class="line"><span class="keyword">print</span> <span class="string">"END!!!"</span></span><br><span class="line">cur.close()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Python/">Python</a><a href="/tags/spy/">spy</a>
   </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2016/02/15/nmap教程/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">nmap教程</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/网络安全/">网络安全</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="https://blog.evit.pro/2016/02/18/Python spyder 总结/" data-title="Python spyder 总结 | Evit&#39;s blog" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/02/15/nmap教程/"  title="nmap教程">
+ <strong>NEXT:</strong><br/> 
+ <span>nmap教程
+</span>
+</a>
+</div>
+
 </nav>
 
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#python-url-helper"><span class="toc-number">1.</span> <span class="toc-text">python url helper</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#多线程"><span class="toc-number">1.1.</span> <span class="toc-text">多线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证"><span class="toc-number">1.2.</span> <span class="toc-text">验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取"><span class="toc-number">1.3.</span> <span class="toc-text">获取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js-的处理"><span class="toc-number">1.4.</span> <span class="toc-text">js 的处理</span></a></li></ol></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
   
-</article>
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/网络安全/" title="网络安全">网络安全<sup>2</sup></a></li>
+		
+		</ul>
+</div>
 
 
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Python/" title="Python">Python<sup>1</sup></a></li>
+		
+			<li><a href="/tags/nmap/" title="nmap">nmap<sup>1</sup></a></li>
+		
+			<li><a href="/tags/spy/" title="spy">spy<sup>1</sup></a></li>
+		
+			<li><a href="/tags/教程/" title="教程">教程<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
 	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		
+		<a href="https://blog.evit.pro" target="_blank" title="Evit">Evit</a>
+		
+		</p>
 </div>
-
-
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Python spyder 总结" data-title="Python spyder 总结" data-url="https://blog.evit.pro/2016/02/18/Python spyder 总结/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
-
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2016 Evit
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
-    </div>
-  </div>
 </footer>
-    </div>
-    
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-
-<script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: true,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false
-	}
-</script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script src="/js/main.js"></script>
-
-
-
-
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
     }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
 });
 </script>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
 </script>
 
 
-  </div>
-</body>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+
+
+
+  </body>
 </html>
